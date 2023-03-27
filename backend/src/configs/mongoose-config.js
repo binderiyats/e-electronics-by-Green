@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGO_CONNECTION_STRING =
-  "mongodb+srv://binderiya:Binderiya12.mongo@cluster0.ae6mc34.mongodb.net/test";
+const MONGO_CONNECTION_STRING = process.env.MONGO_CONNECTION_STRING;
 
 mongoose
   .connect(MONGO_CONNECTION_STRING)
